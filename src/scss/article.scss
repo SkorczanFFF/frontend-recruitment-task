@@ -1,0 +1,49 @@
+@import "./colors";
+
+.article__item {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem;
+  .img__wrapper {
+    width: 505px;
+    height: 330px;
+    cursor:pointer; 
+    &:hover {
+      filter: contrast(125%);
+    }
+  }
+  .divider {
+    width: 95px;
+  }
+  .article__content {
+    width: 380px;
+    align-self: center;
+    .article__title {
+      font-size: 2.625rem;
+      margin-bottom: 1.5rem;
+    }
+    .article__text {
+      margin-bottom: 2rem;
+      line-height: 150%;
+      font-weight: 300;
+    }
+    .btn__counter {
+      background: $primaryCream;
+      border: none;
+      padding: 1rem 2.5rem;
+      border-radius: 2rem;
+      color: white;
+      font-weight: 700;
+      transition: .25s ease-in-out;
+      cursor: pointer;
+      &:hover {
+        color: $dark;
+        background: wheat;
+      }
+    }
+  }
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+    text-align: right;
+  }
+}

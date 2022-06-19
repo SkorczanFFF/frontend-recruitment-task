@@ -1,0 +1,10 @@
+@import "./colors";
+
+.footer {
+  width: 100%;
+  background: $primaryCream;
+  .footer__description {
+    font-size: .75rem;
+    padding: 1rem;
+  }
+}
