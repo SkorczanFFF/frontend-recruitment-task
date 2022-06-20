@@ -7,6 +7,7 @@
     <title>Maciej Skorus - Recruitment task</title>
     <link rel="stylesheet" href="dist/main.css">
     <link rel="stylesheet" href="dist/article.css">
+    <link rel="stylesheet" href="dist/popup.css">
     <link rel="stylesheet" href="dist/footer.css">
     <script src="dist/all.js" defer></script>
 </head>
@@ -36,7 +37,7 @@
                     for modern and legacy infrastructures and SaaS platforms, managed via a single app with no hardware
                     required.
                 </p>
-                <button class="btn__counter">Button</button>
+                <button class="btn__counter" disabled>Button</button>
             </div>
         </div>
 
@@ -65,9 +66,19 @@
                     required.
                 </p>
                 <button class="btn__counter">Button</button>
+            </div>
+        </div>
+
+        <div class="popup" id="popup">
+            <div class="popup__wrapper">
+                <span><img src="./images/icons8-close-48.png" class="btn__close" alt="Close"></span>
+                <h3 class="popup__heading">Alert!</h3>
+                <p class="popup__text">You have clicked <span class="popup__counter"></span> to related button.</p>
+                <button class="btn__reset">Reset counter</button>
             </div>
         </div>
     </section>
+
     <footer class="footer">
         <p class="footer__description">Recruitment task for Gravity Global made by Maciej Skorus</p> 
     </footer>

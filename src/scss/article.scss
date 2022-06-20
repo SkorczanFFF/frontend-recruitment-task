@@ -3,7 +3,8 @@
 .article__item {
   display: flex;
   justify-content: center;
-  margin-bottom: 4rem;
+  margin: 0 auto 4rem auto; 
+
   .img__wrapper {
     width: 505px;
     height: 330px;
@@ -45,5 +46,19 @@
   &:nth-child(even) {
     flex-direction: row-reverse;
     text-align: right;
+    background: rgb(240, 238, 234);
+    .img__wrapper {
+      width: 505px;
+      height: 330px;
+      pointer-events: none;
+      &:hover {
+        filter: none;
+      }
+    }
+    .btn__counter {
+      background: grey;
+      cursor: not-allowed;
+      pointer-events: none;
+    }
   }
 }
