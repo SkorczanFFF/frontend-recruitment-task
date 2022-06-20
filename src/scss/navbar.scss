@@ -1,0 +1,26 @@
+@import "./colors";
+
+.navbar {
+  width: 100%;
+  height: auto;
+  background: $aqua;
+  position: fixed;
+  top: 0;
+  .scroll__status {
+    height: 2px;
+    width: 0%;
+    background-color: $primaryCream;
+    transition: .25s ease;
+    top: 0;
+    left: 0;
+  }
+  .navbar__container {
+    max-width: 1440px;
+    margin: 0 auto;
+    .logo {
+      padding: .75rem;
+      color: $primaryCream;
+      font-size: 1.25rem;
+    }
+  }
+}
