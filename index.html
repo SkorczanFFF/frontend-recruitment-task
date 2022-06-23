@@ -78,10 +78,27 @@
 
         <div class="popup" id="popup">
             <div class="popup__wrapper">
-                <span><img src="./images/icons8-close-48.png" class="btn__close" alt="Close"></span>
-                <h3 class="popup__heading">Alert!</h3>
-                <p class="popup__text">You have clicked <span class="popup__counter"></span> to related button.</p>
-                <button class="btn__reset">Reset counter</button>
+                <div class="counter__wrapper">
+                    <span><img src="./images/icons8-close-48.png" class="btn__close" alt="Close"></span>
+                    <h3 class="popup__heading">Alert!</h3>
+                    <p class="popup__text">You have clicked <span class="popup__counter"></span> to related button.</p>
+                    <button class="btn__reset">Reset counter</button>
+                </div>
+                <div class="table__wrapper">
+                    <img class="loader" src="https://i.ibb.co/w7cdL6f/loading-arrows.png"></img>
+                    <table border class="table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Address</th>
+                                <th>Phone</th>
+                                <th>Company name</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table__response"></tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </section>

@@ -20,60 +20,88 @@
     width: 720px;
     height: auto;
     padding: 56px 95px;
-    .popup__heading {
-      font-size:  2.625rem;
-      margin-bottom: 1.5rem;
-      font-weight: 700;
-      margin-top: -12px;
-    }
-    .popup__text {
-      font-weight: 300;
-      //margin-bottom: 1.5rem;
-      .popup__counter {
+    .counter__wrapper {
+      .popup__heading {
+        font-size:  2.625rem;
+        margin-bottom: 1.5rem;
         font-weight: 700;
+        margin-top: -12px;
       }
-    }
-    .btn__reset {
-      background: $aqua;
-      border: none;
-      padding: 1rem 2rem;
-      border-radius: 2rem;
-      color: white;
-      cursor: pointer;
-      font-weight: 700;
-      transition: .25s ease-out;
-      float: right;
-      display: none;
-      margin-right: -3.5rem;
-      margin-bottom: -1rem;
-      &.visible {
-        display: block;
+      .popup__text {
+        font-weight: 300;
+        //margin-bottom: 1.5rem;
+        .popup__counter {
+          font-weight: 700;
+        }
       }
-      &.clicked {
-        background: transparent;
-        color: #c20202;
-        cursor: not-allowed;
-        pointer-events: not-allowed;
-        &:hover {
+      .btn__reset {
+        background: $aqua;
+        border: none;
+        padding: 1rem 2rem;
+        border-radius: 2rem;
+        color: white;
+        cursor: pointer;
+        font-weight: 700;
+        transition: .25s ease-out;
+        float: right;
+        display: none;
+        margin-right: -3.5rem;
+        margin-bottom: -1rem;
+        &.visible {
+          display: block;
+        }
+        &.clicked {
           background: transparent;
-        } 
+          color: #c20202;
+          cursor: not-allowed;
+          pointer-events: not-allowed;
+          &:hover {
+            background: transparent;
+          } 
+        }
+        &:hover {
+          background: $primaryCream;
+          color: $dark;
+        }
       }
-      &:hover {
-        background: $primaryCream;
-        color: $dark;
+      .btn__close {
+        height: 18px;
+        width: 18px;
+        float: right;
+        margin-right: -3.5rem;
+        margin-top: -1rem;
+        cursor: pointer;
       }
     }
-    .btn__close {
-      height: 18px;
-      width: 18px;
-      float: right;
-      margin-right: -3.5rem;
-      margin-top: -1rem;
-      cursor: pointer;
+    .table__wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 5rem;
+      .loader {
+        //display: none;
+        width: 48px;
+        height: 48px;
+        animation: rotate;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+      .table {
+        width: 100%;
+        height: auto;
+        background: rgb(255, 251, 243);
+        font-size: .75rem;
+      }
     }
   }
   &.active {
     opacity: 1;
     visibility: visible;
   }
+}
+
+@keyframes rotate {
+  from { 	-webkit-transform:rotate(0deg); }
+to { -webkit-transform:rotate(360deg); }
 }
