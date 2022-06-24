@@ -10,7 +10,10 @@
 }
 
 .main {
-  max-width: 1518px;
-  margin: 95px auto 0 auto;
+  max-width: 1470px;
+  margin: 138px auto 0 auto;
+  @media (max-width: 992px) {
+    margin: 100px auto 0 auto;
+  }
 }
 

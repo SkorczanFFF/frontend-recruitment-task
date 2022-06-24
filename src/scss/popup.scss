@@ -45,7 +45,6 @@
         transition: .25s ease-out;
         float: right;
         display: none;
-        margin-right: -3.5rem;
         margin-bottom: -1rem;
         &.visible {
           display: block;
@@ -104,4 +103,37 @@
 @keyframes rotate {
   from { 	-webkit-transform:rotate(0deg); }
 to { -webkit-transform:rotate(360deg); }
+}
+
+@media (max-width: 992px) {
+  .popup {
+    .popup__wrapper {
+      background: white;
+      width: auto;
+      height: auto;
+      padding: 36px 45px;
+      .counter__wrapper {
+        .popup__heading {
+          font-size:  2.625rem;
+          margin-bottom: 1.5rem;
+          font-weight: 700;
+          margin-top: -12px;
+        }
+        .btn__reset {
+          margin-top: 1.5rem;
+        }
+        .btn__close {
+          margin-right: 0rem;
+          margin-top: .5rem;
+        }
+      }
+      .table__wrapper {
+        .loader {
+        }
+        .table {
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
 }

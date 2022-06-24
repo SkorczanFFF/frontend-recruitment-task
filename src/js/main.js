@@ -46,8 +46,6 @@ popup.forEach((popupBg) => {
     }
 })
 
-
-
 async function fetchData() {
   const res = await fetch(endpointURL)
   const users = await res.json()
