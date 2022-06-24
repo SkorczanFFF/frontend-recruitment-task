@@ -27,7 +27,7 @@ for (let i = 0; i < counterBtn.length; i++) {
     } else {
       resetBtn[i].classList.remove('visible', 'clicked')
       resetBtn[i].innerHTML = 'Reset counter'
-    }fetchData()
+    }
   }) 
 }
 
@@ -45,6 +45,8 @@ popup.forEach((popupBg) => {
       popupBg.classList.remove('active')
     }
 })
+
+
 
 async function fetchData() {
   const res = await fetch(endpointURL)
@@ -65,8 +67,11 @@ async function fetchData() {
       </tr>`
     table.insertAdjacentHTML('afterbegin', userData)
   })
-} fetchData().catch(err => {
+} 
+  
+  fetchData().catch(err => {
     err.msg
   })
   loading.style.display = 'none'
+  table.style.display = 'block'
 })
